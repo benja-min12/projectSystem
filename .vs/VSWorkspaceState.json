@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Db",
+    "\\Migrations",
+    "\\model"
   ],
-  "SelectedNode": "\\MainWindow.xaml",
+  "SelectedNode": "\\CreatedProyect.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
