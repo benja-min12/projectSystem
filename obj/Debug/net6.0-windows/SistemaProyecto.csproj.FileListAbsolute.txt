@@ -51,3 +51,58 @@ C:\Users\benja\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows
 C:\Users\benja\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.pdb
 C:\Users\benja\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.genruntimeconfig.cache
 C:\Users\benja\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\ref\SistemaProyecto.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\SistemaProyecto.exe
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\SistemaProyecto.deps.json
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\SistemaProyecto.runtimeconfig.json
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\SistemaProyecto.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\SistemaProyecto.pdb
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.csproj.AssemblyReference.cache
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto_MarkupCompile.cache
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto_MarkupCompile.lref
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.g.resources
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.AssemblyInfoInputs.cache
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.AssemblyInfo.cs
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.csproj.CopyComplete
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\refint\SistemaProyecto.dll
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.pdb
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\SistemaProyecto.genruntimeconfig.cache
+C:\Users\Benjamin Millas\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\ref\SistemaProyecto.dll
+C:\Users\benja\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\CreatedProyect.baml
+C:\Users\benja\OneDrive\Archivos U 2022\SistemaProyecto\obj\Debug\net6.0-windows\CreatedProyect.g.cs

@@ -18,6 +18,4 @@ public class Contexto : DbContext {
     public DbSet<materialConsume> materialConsumes { get; set; }
 
 
-
-
 }

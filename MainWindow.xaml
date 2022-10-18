@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+		<Grid Margin="10">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Label>Name: </Label>
+			<TextBox Grid.Column="1" Margin="0,0,0,10" />
+			<Label Grid.Row="1">Estado: </Label>
+			<TextBox Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" />
+		</Grid>
     </Grid>
 </Window>
