@@ -24,5 +24,17 @@ namespace SistemaProyecto
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // Create a new instance of the CreatedProject class
+            ViewProject createdProject = new ViewProject();
+            // Show the CreatedProject window
+            createdProject.Show();
+            // Close the MainWindow window
+            this.Close();
+
+
+        }
     }
 }

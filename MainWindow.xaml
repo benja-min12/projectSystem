@@ -7,20 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-		<Grid Margin="10">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="Auto" />
-				<ColumnDefinition Width="*" />
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="*" />
-			</Grid.RowDefinitions>
-			<Label>Name: </Label>
-			<TextBox Grid.Column="1" Margin="0,0,0,10" />
-			<Label Grid.Row="1">Estado: </Label>
-			<TextBox Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" />
-		</Grid>
+		<Button Content="Crear Proyecto" HorizontalAlignment="Left" Margin="121,119,0,0" VerticalAlignment="Top" Height="62" Width="127" Click="Button_Click" FontFamily="Arial Rounded MT Bold"/>
+        <Button Content="Crear Tarea" HorizontalAlignment="Left" Margin="541,119,0,0" VerticalAlignment="Top" Height="61" Width="127" FontFamily="Arial Rounded MT Bold"/>
+        <Button Content="Asignar Material" HorizontalAlignment="Left" Margin="541,282,0,0" VerticalAlignment="Top" Height="61" Width="127" FontFamily="Arial Rounded MT Bold"/>
+        <Button Content="Modificar Tarea" HorizontalAlignment="Left" Margin="121,282,0,0" VerticalAlignment="Top" Height="61" Width="127" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Sistema Proyectos" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" Height="45" Width="194" FontSize="18" FontFamily="Arial Black"/>
     </Grid>
 </Window>

@@ -2,7 +2,8 @@ using System;
 using Microsoft.EntityFrameworkCore;
 
 
-public class Contexto : DbContext {
+public class Contexto : DbContext
+{
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -16,6 +17,13 @@ public class Contexto : DbContext {
     public DbSet<Material> materials { get; set; }
 
     public DbSet<materialConsume> materialConsumes { get; set; }
-
-
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Project>().ToTable("Project").Property(p => p.Status).HasConversion<string>();
+        modelBuilder.Entity<Task>().ToTable("Task");
+        modelBuilder.Entity<Material>().ToTable("Material");
+        modelBuilder.Entity<materialConsume>().ToTable("materialConsume");
+       
+    }
 }
