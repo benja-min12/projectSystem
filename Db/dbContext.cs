@@ -21,7 +21,7 @@ public class Contexto : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Project>().ToTable("Project").Property(p => p.Status).HasConversion<string>();
-        modelBuilder.Entity<Task>().ToTable("Task");
+        modelBuilder.Entity<Task>().ToTable("Task").Property(p => p.Status).HasConversion<string>();
         modelBuilder.Entity<Material>().ToTable("Material");
         modelBuilder.Entity<materialConsume>().ToTable("materialConsume");
        

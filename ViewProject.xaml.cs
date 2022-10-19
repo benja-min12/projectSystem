@@ -52,11 +52,11 @@ namespace SistemaProyecto
 
             if(bd.SaveChanges() > 0)
             {
-                MessageBox.Show("Project created successfully");
+                MessageBox.Show("Proyecto creado con exito");
             }
             else
             {
-                MessageBox.Show("Project not created");
+                MessageBox.Show("Error al crear el proyecto");
             }
 
         }
