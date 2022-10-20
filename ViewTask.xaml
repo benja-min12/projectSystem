@@ -10,10 +10,10 @@
         <Label Content="Crear Tarea" HorizontalAlignment="Left" Margin="148,45,0,0" VerticalAlignment="Top" Height="33" Width="157" FontFamily="Arial Black" FontSize="18"/>
         <TextBox Name ="Nombre" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="28"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="148,192,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
-        <ComboBox Name="Estado" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectedIndex="0"/>
+        <ComboBox Name="Estado" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectedIndex="0" SelectionChanged="Estado_SelectionChanged"/>
         <Label Content="Estado" HorizontalAlignment="Left" Margin="146,286,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <Button Content="Crear" HorizontalAlignment="Center" Margin="0,469,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="14" Click="CreatedTask"/>
-        <Button Content="Atras" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Height="39" Width="39" Click="Back"/>
+        <Button Content="Atras" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Height="37" Width="73" Click="Back"/>
         <ComboBox x:Name="Proyecto" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="154" Height="28"/>
         <Label Content="Proyecto" HorizontalAlignment="Left" Margin="146,101,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <TextBox x:Name ="Avance" HorizontalAlignment="Center" Margin="0,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="28"/>
