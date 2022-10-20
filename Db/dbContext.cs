@@ -8,6 +8,7 @@ public class Contexto : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(@"Server=.\;Database=proyectos;Trusted_Connection=True");
+        //optionsBuilder.UseSqlServer(@"Server=.\sqlexpress;Database=proyectos;Trusted_Connection=True");
     }
 
     public DbSet<Project> projects { get; set; }
