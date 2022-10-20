@@ -38,7 +38,7 @@ namespace SistemaProyecto
         private void CreatedTask(object sender, RoutedEventArgs e)
         {
             int id = Proyecto.SelectedIndex + 1;
-            Task task = new Task() { Name=Nombre.Text,progress=Avance.Text,ProjectId=id};
+            Task task = new Task() { Name=Nombre.Text ,progress=Avance.Text,ProjectId=id};
             if (Estado.SelectedItem.ToString() == "Activo")
             {
                 task.Status = "Active";
@@ -50,6 +50,7 @@ namespace SistemaProyecto
 
             Contexto bd = new Contexto();
             bd.tasks.Add(task);
+
             if (bd.SaveChanges() > 0)
             {
                 MessageBox.Show("Tarea creada con exito");
@@ -59,8 +60,6 @@ namespace SistemaProyecto
                 MessageBox.Show("Error al crear la tarea");
             }
 
-
-
         }
 
         private void Back(object sender, RoutedEventArgs e)
@@ -68,6 +67,11 @@ namespace SistemaProyecto
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+        private void Estado_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
