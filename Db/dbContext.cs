@@ -17,13 +17,12 @@ public class Contexto : DbContext
     public DbSet<Material> materials { get; set; }
 
     public DbSet<materialConsume> materialConsumes { get; set; }
-    
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Project>().ToTable("Project").Property(p => p.Status).HasConversion<string>();
         modelBuilder.Entity<Task>().ToTable("Task").Property(p => p.Status).HasConversion<string>();
         modelBuilder.Entity<Material>().ToTable("Material");
         modelBuilder.Entity<materialConsume>().ToTable("materialConsume");
-       
     }
 }

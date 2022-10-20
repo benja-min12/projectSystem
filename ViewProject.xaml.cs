@@ -24,7 +24,7 @@ namespace SistemaProyecto
         {
             InitializeComponent();
             Estado.Items.Add("Activo");
-            Estado.Items.Add("Inactivo");
+            Estado.Items.Add("Inactivo");    
         }
 
         private void CreatedProject(object sender, RoutedEventArgs e)
