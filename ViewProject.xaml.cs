@@ -25,6 +25,7 @@ namespace SistemaProyecto
             InitializeComponent();
             Estado.Items.Add("Activo");
             Estado.Items.Add("Inactivo");
+            Estado.Items.Add("Terminado");
         }
 
         private void CreatedProject(object sender, RoutedEventArgs e)
@@ -40,12 +41,19 @@ namespace SistemaProyecto
                     Name = Nombre.Text,
                     Status= Project.status.Active
                 };
-            }else{
+            }else if (status == "Inactivo"){
                 //created project with status inactive
                 project = new Project()
                 {
                     Name = Nombre.Text,
                     Status = Project.status.Inactive
+                };
+            }else{
+                //created project with status terminated
+                project = new Project()
+                {
+                    Name = Nombre.Text,
+                    Status = Project.status.terminated
                 };
             }
             bd.projects.Add(project);

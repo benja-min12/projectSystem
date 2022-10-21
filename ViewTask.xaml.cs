@@ -32,21 +32,28 @@ namespace SistemaProyecto
 
             Estado.Items.Add("Activo");
             Estado.Items.Add("Inactivo");
+            Estado.Items.Add("Terminado");
         }
        
 
         private void CreatedTask(object sender, RoutedEventArgs e)
         {
             int id = Proyecto.SelectedIndex + 1;
-            Task task = new Task() { Name=Nombre.Text ,progress=Avance.Text,ProjectId=id};
+            Task task = new Task() { Name=Nombre.Text ,ProjectId=id};
             if (Estado.SelectedItem.ToString() == "Activo")
             {
                 task.Status = "Active";
             }
-            else
+            else if(Estado.SelectedItem.ToString() == "Inactivo")
             {
                 task.Status = "Inactive";
             }
+            else
+            {
+                task.Status = "Terminated";
+            }
+
+            task.progress = (int)sProgrees.Value;
 
             Contexto bd = new Contexto();
             bd.tasks.Add(task);
@@ -72,6 +79,11 @@ namespace SistemaProyecto
         private void Estado_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void sProgrees_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            pbProgress.Value = (int)sProgrees.Value;
         }
     }
 }
