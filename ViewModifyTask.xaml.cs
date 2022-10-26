@@ -113,9 +113,9 @@ namespace SistemaProyecto
             }
             else
             {
-                 sProgrees.Value = 0;
-                 pbProgress.Value = 0;
-                 Estado.SelectedItem = "Activo";
+                sProgrees.Value = 0;
+                pbProgress.Value = 0;
+                Estado.SelectedItem = "Activo";
             }
 
 
