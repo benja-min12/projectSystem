@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SistemaProyecto"
         mc:Ignorable="d"
-       Title="ViewProject" Height="550" Width="450">
+        Title="ViewProject" Height="550" Width="450">
     <Grid >
         <Label Content="Crear Tarea" HorizontalAlignment="Left" Margin="148,45,0,0" VerticalAlignment="Top" Height="33" Width="157" FontFamily="Arial Black" FontSize="18"/>
         <TextBox Name ="Nombre" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="28"/>

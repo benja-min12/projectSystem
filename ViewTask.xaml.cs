@@ -34,7 +34,7 @@ namespace SistemaProyecto
             Estado.Items.Add("Inactivo");
             Estado.Items.Add("Terminado");
         }
-       
+
 
         private void CreatedTask(object sender, RoutedEventArgs e)
         {
