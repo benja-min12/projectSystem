@@ -50,5 +50,12 @@ namespace SistemaProyecto
             viewModifyTask.Show();
             this.Close();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+          ViewMaterial viewMaterial = new ViewMaterial();
+            viewMaterial.Show();
+            this.Close();
+        }
     }
 }

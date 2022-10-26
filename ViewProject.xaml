@@ -8,9 +8,9 @@
         Title="ViewProject" Height="400" Width="450">
     <Grid >
         <Label Content="Crear Proyecto" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" Height="33" Width="157" FontFamily="Arial Black" FontSize="18"/>
-        <TextBox Name ="Nombre" HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="28"/>
+        <TextBox Name ="Nombre" HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="28" PreviewTextInput="Nombre_PreviewtextInput"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="146,111,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
-        <ComboBox Name="Estado" HorizontalAlignment="Center" Margin="0,223,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectedIndex="0"/>
+        <ComboBox Name="Estado" HorizontalAlignment="Center" Margin="0,223,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectedIndex="0" SelectionChanged="Estado_SelectionChanged"/>
         <Label Content="Estado" HorizontalAlignment="Left" Margin="146,198,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <Button Content="Crear" HorizontalAlignment="Center" Margin="0,299,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="14" Click="CreatedProject"/>
         <Button Content="Atras" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Height="39" Width="39" Click="Back"/>

@@ -85,7 +85,7 @@ namespace SistemaProyecto
         private void Tarea_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-            Contexto db = new Contexto();
+            Contexto db = new Contexto();   
             int id = 0;
             if (Tarea.SelectedIndex != -1)
             {

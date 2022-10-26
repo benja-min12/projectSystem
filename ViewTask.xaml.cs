@@ -24,6 +24,7 @@ namespace SistemaProyecto
             InitializeComponent();
             Contexto bd = new Contexto();
             List<Project> projects = bd.projects.ToList();
+
             foreach (Project project in projects)
             {
                 Proyecto.Items.Add(project.Name);
@@ -84,6 +85,16 @@ namespace SistemaProyecto
         private void sProgrees_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             pbProgress.Value = (int)sProgrees.Value;
+        }
+
+        private void Proyecto_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Nombre_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
