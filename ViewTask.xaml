@@ -8,13 +8,13 @@
        Title="ViewProject" Height="550" Width="450">
     <Grid >
         <Label Content="Crear Tarea" HorizontalAlignment="Left" Margin="148,45,0,0" VerticalAlignment="Top" Height="33" Width="157" FontFamily="Arial Black" FontSize="18"/>
-        <TextBox Name ="Nombre" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="28"/>
+        <TextBox Name ="Nombre" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="28" TextChanged="Nombre_TextChanged"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="145,192,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <ComboBox Name="Estado" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectedIndex="0" SelectionChanged="Estado_SelectionChanged"/>
         <Label Content="Estado" HorizontalAlignment="Left" Margin="145,267,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <Button Content="Crear" HorizontalAlignment="Center" Margin="0,469,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="14" Click="CreatedTask"/>
         <Button Content="Atras" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Height="37" Width="73" Click="Back"/>
-        <ComboBox x:Name="Proyecto" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="154" Height="28"/>
+        <ComboBox x:Name="Proyecto" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectionChanged="Proyecto_SelectionChanged"/>
         <Label Content="Proyecto" HorizontalAlignment="Left" Margin="145,101,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <Label Content="Avance" HorizontalAlignment="Left" Margin="145,353,0,0" VerticalAlignment="Top" Height="30" Width="69" FontSize="15"/>
         <Slider Name="sProgrees" HorizontalAlignment="Center" Margin="0,415,0,0" VerticalAlignment="Top" Width="160" Height="25" ValueChanged="sProgrees_ValueChanged" Maximum="100" TickPlacement="BottomRight" TickFrequency="10" IsSnapToTickEnabled="True"/>
