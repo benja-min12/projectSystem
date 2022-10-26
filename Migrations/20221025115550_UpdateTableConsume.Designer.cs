@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace SistemaProyecto.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20221025115550_UpdateTableConsume")]
+    partial class UpdateTableConsume
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -59,20 +61,20 @@ namespace SistemaProyecto.Migrations
                     b.Property<int>("MaterialId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TaskId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("date")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("quantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("taskId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MaterialId");
 
-                    b.HasIndex("TaskId");
+                    b.HasIndex("taskId");
 
                     b.ToTable("materialConsume", (string)null);
                 });
@@ -137,7 +139,7 @@ namespace SistemaProyecto.Migrations
 
                     b.HasOne("Task", "task")
                         .WithMany("materialConsumes")
-                        .HasForeignKey("TaskId")
+                        .HasForeignKey("taskId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
