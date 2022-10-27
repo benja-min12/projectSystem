@@ -6,22 +6,23 @@
         xmlns:local="clr-namespace:SistemaProyecto"
         mc:Ignorable="d"
         Title="ViewMaterial" Height="473" Width="516">
-    <Grid RenderTransformOrigin="0.504,0.399" Height="497" VerticalAlignment="Top">
+    <Grid RenderTransformOrigin="0.504,0.399" Height="497" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="89*"/>
             <RowDefinition Height="94*"/>
         </Grid.RowDefinitions>
-        <Label Content="Asignar Material" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Height="33" Width="190" FontFamily="Arial Black" FontSize="18"/>
-        <Label Content="Tarea" HorizontalAlignment="Left" Margin="114,199,0,0" VerticalAlignment="Top" Height="40" Width="70" FontSize="15"/>
-        <Label Content="Material" HorizontalAlignment="Left" Margin="114,27,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15" Grid.Row="1"/>
-        <Button x:Name="createdMaterial" Content="Asignar" HorizontalAlignment="Left" Margin="193,143,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="14" Click="CreatedTask" Grid.Row="1" RenderTransformOrigin="0.462,0.011"/>
-        <Button Content="Atras" HorizontalAlignment="Left" Margin="24,35,0,0" VerticalAlignment="Top" Height="50" Width="96" Click="Back"/>
-        <Label Content="proyecto" HorizontalAlignment="Left" Margin="114,126,0,0" VerticalAlignment="Top" Height="38" Width="70" FontSize="15" RenderTransformOrigin="0.696,0.418"/>
-        <ComboBox x:Name="Proyecto" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Height="28" SelectionChanged="Proyecto_SelectionChanged" Margin="197,133,0,0"/>
-        <ComboBox x:Name="Material" HorizontalAlignment="Left" Margin="197,27,0,0" Grid.Row="1" VerticalAlignment="Top" Width="154" Height="26" SelectionChanged="Material_SelectionChanged"/>
-        <ComboBox x:Name="Tarea" HorizontalAlignment="Left" Margin="196,204,0,0" VerticalAlignment="Top" Width="155" Height="26"/>
-        <TextBox x:Name ="Cantidad" HorizontalAlignment="Left" Margin="199,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="22" Grid.Row="1" PreviewTextInput="Cantidad_PreviewtextInput" TextChanged="Cantidad_TextChanged"/>
-        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="114,86,0,0" VerticalAlignment="Top" Height="44" Width="77" FontSize="15" Grid.Row="1"/>
+        <Label Content="Asignar Material" HorizontalAlignment="Left" Margin="164,53,0,0" VerticalAlignment="Top" Height="33" Width="216" FontFamily="Arial Black" FontSize="22"/>
+        <Label Content="Tarea" HorizontalAlignment="Left" Margin="178,178,0,0" VerticalAlignment="Top" Height="40" Width="70" FontSize="16"/>
+        <Label Content="Material" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="16" Grid.Row="1"/>
+        <Button x:Name="createdMaterial" Content="Asignar" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="16" Click="CreatedTask" Grid.Row="1" RenderTransformOrigin="0.462,0.011" Background="#FFDC8720" FontFamily="Arial Rounded MT Bold"/>
+        <Button Content="Atrás" HorizontalAlignment="Left" Margin="24,35,0,0" VerticalAlignment="Top" Height="50" Width="96" Click="Back" Background="#FFDC8720" FontSize="16" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Proyecto" HorizontalAlignment="Left" Margin="178,0,0,0" VerticalAlignment="Center" Height="35" Width="78" FontSize="16" RenderTransformOrigin="0.696,0.418"/>
+        <ComboBox x:Name="Proyecto" HorizontalAlignment="Center" VerticalAlignment="Top" Width="154" Height="28" SelectionChanged="Proyecto_SelectionChanged" Margin="0,134,0,0"/>
+        <ComboBox x:Name="Material" HorizontalAlignment="Center" Margin="0,27,0,0" Grid.Row="1" VerticalAlignment="Top" Width="154" Height="26" SelectionChanged="Material_SelectionChanged"/>
+        <ComboBox x:Name="Tarea" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top" Width="156" Height="26"/>
+        <TextBox x:Name ="Cantidad" HorizontalAlignment="Center" Margin="0,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="26" Grid.Row="1" PreviewTextInput="Cantidad_PreviewtextInput" TextChanged="Cantidad_TextChanged"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="180,58,0,0" VerticalAlignment="Top" Height="44" Width="78" FontSize="16" Grid.Row="1"/>
+        <Label Name="LBCantidad" Content="Cantidad disponible:  " HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="23" Width="156" FontFamily="Arial" FontSize="11" Margin="174,112,0,0"/>
 
     </Grid>
 </Window>

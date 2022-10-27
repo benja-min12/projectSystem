@@ -31,7 +31,6 @@ namespace SistemaProyecto
             foreach (Project project in projects)
             {
                 Proyecto.Items.Add(project.Name);
-
             }
             Estado.Items.Add("Activo");
             Estado.Items.Add("Inactivo");
@@ -40,7 +39,11 @@ namespace SistemaProyecto
 
         private void CreatedTask(object sender, RoutedEventArgs e)
         {
-
+            if (Proyecto.SelectedItem == null || Tarea.SelectedItem == null || Estado.SelectedItem == null )
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+                return;
+            }
             Contexto db = new Contexto();
             string idStr = Tarea.SelectedValue.ToString();
             int id = int.Parse(idStr);
@@ -67,7 +70,11 @@ namespace SistemaProyecto
 
             if (db.SaveChanges() > 0)
             {
-                MessageBox.Show("Tarea modificada con exito");
+                MessageBox.Show("Tarea modificada con éxito");
+                Proyecto.SelectedItem = null;
+                Tarea.SelectedItem = null;
+                Estado.SelectedItem = null;
+                sProgrees.Value = 0;
             }
             else
             {
@@ -84,7 +91,6 @@ namespace SistemaProyecto
 
         private void Tarea_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
             Contexto db = new Contexto();   
             int id = 0;
             if (Tarea.SelectedIndex != -1)
@@ -92,11 +98,8 @@ namespace SistemaProyecto
                 string idStr = Tarea.SelectedValue.ToString();
                 id = int.Parse(idStr);
                 Task task = db.tasks.FirstOrDefault(t => t.Id == id);
-
                 sProgrees.Value = task.progress;
-
                 pbProgress.Value = task.progress;
-
                 if (task.Status.ToString() == "Active")
                 {
                     Estado.SelectedItem = "Activo";
@@ -109,7 +112,6 @@ namespace SistemaProyecto
                 {
                     Estado.SelectedItem = "Terminado";
                 }
-
             }
             else
             {

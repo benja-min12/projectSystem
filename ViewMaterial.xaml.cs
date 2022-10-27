@@ -62,24 +62,39 @@ namespace SistemaProyecto
         private void CreatedTask(object sender, RoutedEventArgs e)
         {
            
+            if (Proyecto.SelectedItem == null || Tarea.SelectedItem == null || Material.SelectedItem == null || string.IsNullOrEmpty(Cantidad.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+                return;
+            }
             int cantStr = int.Parse(Cantidad.Text.ToString());
             int tareastr = int.Parse(Tarea.SelectedValue.ToString()) ;
             int MaterialStr = int.Parse(Material.SelectedValue.ToString());
-          
             Contexto db = new Contexto();
-            materialConsume materialconsume = new materialConsume() { MaterialId =MaterialStr, quantity = cantStr , date=DateTime.Now, TaskId=tareastr};
-           
-            db.materialConsumes.Add(materialconsume);
-
-            if (db.SaveChanges() > 0)
-            {
-                MessageBox.Show("Material ingresado con exito");
-            }
-            else
-            {
-                MessageBox.Show("Error al ingresar el material");
-            }
-
+            Material material = db.materials.FirstOrDefault(m => m.Id == MaterialStr);
+            if(material.quantity < cantStr){
+                MessageBox.Show("No hay suficiente material");
+            }else{
+                material.quantity = material.quantity - cantStr;
+                materialConsume materialconsume = new materialConsume() { MaterialId =MaterialStr, quantity = cantStr , date=DateTime.Now, TaskId=tareastr};
+                db.materialConsumes.Add(materialconsume);
+                db.materials.Update(material);
+                if (db.SaveChanges() > 0)
+                {
+                    MessageBox.Show("Material ingresado con éxito");
+                    Proyecto.SelectedItem = null;
+                    Tarea.SelectedItem = null;
+                    Material.SelectedItem = null;
+                    Cantidad.Text = "";
+                    LBCantidad.Content = "Cantidad disponible: ";
+                }
+                else
+                {
+                    MessageBox.Show("Error al ingresar el material");
+                }
+                
+            }   
+            
         }
 
         private void Proyecto_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -100,7 +115,12 @@ namespace SistemaProyecto
 
         private void Material_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            if (Material.SelectedItem != null)
+            {
+                Contexto db = new Contexto();
+                Material material = db.materials.FirstOrDefault(m => m.Id == (int)Material.SelectedValue);
+                LBCantidad.Content = "Cantidad disponible: " + material.quantity;
+            }
 
         }
 

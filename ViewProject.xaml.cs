@@ -31,6 +31,11 @@ namespace SistemaProyecto
 
         private void CreatedProject(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(Nombre.Text))
+            {
+                MessageBox.Show("Por favor llene el nombre");
+                return;
+            }
             Contexto bd = new Contexto();
             string status = Estado.SelectedValue.ToString();
             Project project;
@@ -61,7 +66,8 @@ namespace SistemaProyecto
 
             if(bd.SaveChanges() > 0)
             {
-                MessageBox.Show("Proyecto creado con exito");
+                MessageBox.Show("Proyecto creado con éxito");
+                Nombre.Text = "";
             }
             else
             {

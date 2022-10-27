@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:SistemaProyecto"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-		<Button Content="Crear Proyecto" HorizontalAlignment="Left" Margin="121,119,0,0" VerticalAlignment="Top" Height="62" Width="127" Click="Button_Click" FontFamily="Arial Rounded MT Bold"/>
-        <Button Content="Crear Tarea" HorizontalAlignment="Left" Margin="541,119,0,0" VerticalAlignment="Top" Height="61" Width="127" FontFamily="Arial Rounded MT Bold" Click="Button_Click_1"/>
-        <Button Content="Asignar Material" HorizontalAlignment="Left" Margin="541,282,0,0" VerticalAlignment="Top" Height="61" Width="127" FontFamily="Arial Rounded MT Bold" Click="Button_Click_3"/>
-        <Button Content="Modificar Tarea" HorizontalAlignment="Left" Margin="121,282,0,0" VerticalAlignment="Top" Height="61" Width="127" FontFamily="Arial Rounded MT Bold" Click="Button_Click_2"/>
-        <Label Content="Sistema Proyectos" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" Height="45" Width="194" FontSize="18" FontFamily="Arial Black"/>
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Button Content="Crear Proyecto" HorizontalAlignment="Left" Margin="123,128,0,0" VerticalAlignment="Top" Height="67" Width="134" Click="Button_Click" FontFamily="Arial Rounded MT Bold" Background="#FFDC8720" FontSize="14"/>
+        <Button Content="Crear Tarea" HorizontalAlignment="Left" Margin="566,128,0,0" VerticalAlignment="Top" Height="66" Width="134" FontFamily="Arial Rounded MT Bold" Click="Button_Click_1" Background="#FFDC8720" FontSize="14"/>
+        <Button Content="Asignar Material" HorizontalAlignment="Left" Margin="566,303,0,0" VerticalAlignment="Top" Height="66" Width="134" FontFamily="Arial Rounded MT Bold" Click="Button_Click_3" Background="#FFDC8720" FontSize="14"/>
+        <Button Content="Modificar Tarea" HorizontalAlignment="Left" Margin="123,303,0,0" VerticalAlignment="Top" Height="66" Width="134" FontFamily="Arial Rounded MT Bold" Click="Button_Click_2" Background="#FFDC8720" FontSize="14"/>
+        <Label Content="Sistema Proyectos" HorizontalAlignment="Left" Margin="220,44,0,0" VerticalAlignment="Top" Height="49" Width="384" FontSize="36" FontFamily="Arial Black"/>
     </Grid>
 </Window>

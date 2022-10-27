@@ -23,11 +23,14 @@ namespace SistemaProyecto
         {
             InitializeComponent();
             Contexto bd = new Contexto();
-            List<Project> projects = bd.projects.ToList();
+            
+            List<Project> projects = bd.projects.Where(p => p.Status == Project.status.Active).ToList();
 
             foreach (Project project in projects)
             {
-                Proyecto.Items.Add(project.Name);
+                Proyecto.ItemsSource = projects;
+                Proyecto.DisplayMemberPath = "Name";
+                Proyecto.SelectedValuePath = "Id";
 
             }
 
@@ -39,7 +42,12 @@ namespace SistemaProyecto
 
         private void CreatedTask(object sender, RoutedEventArgs e)
         {
-            int id = Proyecto.SelectedIndex + 1;
+            if (Proyecto.SelectedItem == null || Estado.SelectedItem == null || string.IsNullOrEmpty(Nombre.Text))
+            {
+                MessageBox.Show("Por favor llene todos los campos");
+                return;
+            }
+            int id = (int)Proyecto.SelectedValue;
             Task task = new Task() { Name=Nombre.Text ,ProjectId=id};
             if (Estado.SelectedItem.ToString() == "Activo")
             {
@@ -61,7 +69,11 @@ namespace SistemaProyecto
 
             if (bd.SaveChanges() > 0)
             {
-                MessageBox.Show("Tarea creada con exito");
+                MessageBox.Show("Tarea creada con éxito");
+                Nombre.Text = "";
+                Proyecto.SelectedItem = null;
+                Estado.SelectedItem = null;
+                sProgrees.Value = 0;
             }
             else
             {

@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:SistemaProyecto"
         mc:Ignorable="d"
         Title="Modificar Tarea" Height="550" Width="450">
-    <Grid Margin="0,0,0,-6">
-        <Label Content="Modificar Tarea" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" Height="32" Width="166" FontFamily="Arial Black" FontSize="18"/>
+    <Grid Margin="0,0,0,-6" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Label Content="Modificar Tarea" HorizontalAlignment="Left" Margin="142,44,0,0" VerticalAlignment="Top" Height="32" Width="211" FontFamily="Arial Black" FontSize="22"/>
         <Label Content="Proyecto" HorizontalAlignment="Left" Margin="146,101,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
         <ComboBox x:Name="Proyecto" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectionChanged="Proyecto_SelectionChanged"/>
         <ComboBox x:Name="Estado" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectedIndex="0"/>
         <Label Content="Estado" HorizontalAlignment="Left" Margin="145,270,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15"/>
-        <Button Content="Modificar" HorizontalAlignment="Left" Margin="148,469,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="14" Click="CreatedTask"/>
-        <Button Content="Atras" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Height="37" Width="73" Click="Back"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="148,469,0,0" VerticalAlignment="Top" Height="30" Width="158" FontSize="14" Click="CreatedTask" Background="#FFDC8720"/>
+        <Button Content="Atrás" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Height="37" Width="73" Click="Back" Background="#FFDC8720"/>
         <ComboBox x:Name="Tarea" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top" Width="154" Height="28" SelectionChanged="Tarea_SelectionChanged"/>
         <Label Content="Tarea" HorizontalAlignment="Left" Margin="145,180,0,0" VerticalAlignment="Top" Height="40" Width="70" FontSize="15" RenderTransformOrigin="0.5,0.5"></Label>
         <Label Content="Avance" HorizontalAlignment="Left" Margin="142,343,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="15" RenderTransformOrigin="0.686,0.437"/>
