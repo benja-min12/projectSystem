@@ -121,9 +121,7 @@ namespace SistemaProyecto
                 Material material = db.materials.FirstOrDefault(m => m.Id == (int)Material.SelectedValue);
                 LBCantidad.Content = "Cantidad disponible: " + material.quantity;
             }
-
         }
-
         //validacion para que solo se puedan ingresar valores numericos 
         private void Cantidad_PreviewtextInput(object sender, TextCompositionEventArgs e)
         {
